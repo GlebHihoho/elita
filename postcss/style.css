@@ -1,3 +1,9 @@
-body {
-  background: red;
-}
+@import "font.css";
+@import "mixin.css";
+@import "global.css";
+
+@import "blocks/header.css";
+@import "blocks/slider.css";
+@import "blocks/services.css";
+@import "blocks/contacts.css";
+@import "blocks/footer.css";

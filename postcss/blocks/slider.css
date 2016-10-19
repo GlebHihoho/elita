@@ -1,0 +1,77 @@
+.slider {
+  @mixin container;
+}
+
+/* ----------------------------- */
+/* ----- Блок с картинкой ------ */
+/* ----------------------------- */
+
+.slider__content-block {
+  height: 480px;
+  display: flex;
+  align-items: flex-end;;
+
+  background-image: url("../img/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 480px;
+}
+
+/* ------ Блок с текстом ------- */
+
+.slider__content {
+  border: 2px solid grey;
+
+  text-align: center;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+/* ---------- Текст ----------- */
+
+.slider__text {
+  @mixin margin-reset;
+  padding: 15px 30px;
+}
+
+/* ----------------------------- */
+/* ----- Блок с управлением ---- */
+/* -------- слайдером ---------- */
+/* ----------------------------- */
+
+.slider__btn-block {
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid grey;
+  border-top: none;
+}
+
+/* ------- Радио инпут --------- */
+
+.slider__radio {
+  display: none;
+}
+
+/* --------- Кнопочки ---------- */
+
+.slider__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  border: 2px solid black;
+  border-radius: 50%
+}
+
+.slider__btn--last {
+  margin-right: 0;
+}
+
+.slider__btn--active {
+  border-color: orange;
+  background-color: orange;
+}

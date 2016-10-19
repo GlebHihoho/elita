@@ -1,0 +1,41 @@
+.header {
+  @mixin container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0;
+  line-height: 0;
+
+  border-bottom: 2px solid black;
+}
+
+.header__name-site {
+  display: none;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header__name {
+  @mixin margin-reset;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.header__name-site {
+  border: 2px solid black;
+}
+
+.header__btn {
+  padding: 25px;
+
+  color: black;
+  font-size: 15px;
+  line-height: 15px;
+}
+
+.header__btn:hover {
+  background-color: orange;
+}

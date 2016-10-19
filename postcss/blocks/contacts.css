@@ -1,0 +1,44 @@
+.contacts {
+  @mixin container;
+}
+
+/* ---------- Шапка ---------- */
+
+.contacts__header {
+  @mixin margin-reset;
+  padding: 20px 0;
+
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* -------- Описание -------- */
+
+.contacts__description {
+  padding-left: 20px;
+}
+
+.contacts__type {
+  margin-bottom: 15px;
+
+  color: orange;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.contacts__value {
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* -------- Время -------- */
+
+.contacts__time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__number {
+  margin-right: 70px;
+}
