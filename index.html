@@ -9,17 +9,20 @@
 <body>
 
   <header class="header">
-    <a class="header__logo" href="">
-      <img class="header__logo-img" src="img/logo.svg" alt="logo" width="80" height="60">
-    </a>
-
-    <div class="header__name-site">
-      <p class="header__name  header__name-first">Парикмахерская</p>
-      <p class="header__name  header__name-second">«Элита»</p>
+    <div class="header__logo-container">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/logo.svg" alt="logo" width="80" height="60">
+      </a>
+      <div class="header__name-site">
+        <p class="header__name  header__name-first">Парикмахерская</p>
+        <p class="header__name  header__name-second">«Элита»</p>
+      </div>
     </div>
 
-    <a class="header__btn" href="#service">Услуги</a>
-    <a class="header__btn" href="#contact">Контакты</a>
+    <div class="header__btn-container">
+      <a class="header__btn" href="#service">Услуги</a>
+      <a class="header__btn" href="#contact">Контакты</a>
+    </div>
   </header>
 
   <div class="slider">
@@ -27,43 +30,48 @@
 
       <div class="slider__slide">
         <div class="slider__content">
+          <div class="slider__border"></div>
           <p class="slider__text">
-            Многолетний опыт, талант в индустрии волос!
+            <span class="slider__text-small">Многолетний</span><br> опыт, талант <span class="slider__text-small">в</span> индустрии волос!
           </p>
+          <div class="slider__border"></div>
         </div>
       </div>
 
-      <div class="slider__slide" hidden="hidden">
+      <div class="slider__slide">
         <div class="slider__content">
+          <div class="slider__border"></div>
           <p class="slider__text">
-            Мы всегда рады предложить вам полный спектр услуг по уходу за волосами.
+            Мы всегда рады <br><span class="slider__text-small">предложить вам полный</span><br> спектр услуг <br>
+            <span class="slider__text-small">по уходу за волосами.</span>
           </p>
+          <div class="slider__border"></div>
         </div>
       </div>
 
-      <div class="slider__slide" hidden="hidden">
+      <div class="slider__slide">
         <div class="slider__content">
-          <p class="slider__text">
-            Выбери то, что нужно твоим волосам
-          </p>
+          <div class="slider__border"></div>
+          <p class="slider__text"><span class="slider__text-small">Выбери то,<br> что нужно<br></span> твоим<br> волосам</p>
+          <div class="slider__border"></div>
         </div>
       </div>
 
     </div>
     <div class="slider__btn-block">
       <label class="slider__lebel">
-        <span class="slider__btn  slider__btn--active"></span>
-        <input class="slider__radio" type="radio" name="toggle" checked>
+        <span class="slider__btn  "></span>
+        <input class="slider__radio  slider__radio-1" type="radio" name="toggle">
       </label>
 
       <label class="slider__lebel">
         <span class="slider__btn"></span>
-        <input class="slider__radio" type="radio" name="toggle">
+        <input class="slider__radio  slider__radio-2" type="radio" name="toggle">
       </label>
 
       <label class="slider__lebel">
         <span class="slider__btn  slider__btn--last"></span>
-        <input class="slider__radio" type="radio" name="toggle">
+        <input class="slider__radio  slider__radio-3" type="radio" name="toggle">
       </label>
     </div>
   </div>
@@ -151,6 +159,6 @@
       </div>
     </div>
   </div>
-
+  <!-- <script src="js/slider.js"></script> -->
 </body>
 </html>

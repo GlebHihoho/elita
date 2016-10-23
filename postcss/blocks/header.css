@@ -9,6 +9,18 @@
   border-bottom: 2px solid black;
 }
 
+/* -------------------------- */
+/* ---------- Logo ---------- */
+/* -------------------------- */
+
+.header__logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 5px 0;
+}
+
 .header__name-site {
   display: none;
   text-align: center;
@@ -21,19 +33,30 @@
 .header__name {
   @mixin margin-reset;
   font-size: 15px;
-  line-height: 15px;
+  line-height: 20px;
 }
 
-.header__name-site {
-  border: 2px solid black;
+.header__name-first {
+  color: grey;
 }
+
+.header__name-second {
+  font-size: 20px;
+  line-height: 25px;
+  /*text-transform: uppercase;*/
+}
+
+/* ---------- BTN ---------- */
 
 .header__btn {
-  padding: 25px;
+  padding: 27px 20px;
 
   color: black;
   font-size: 15px;
+  font-weight: 700;
   line-height: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .header__btn:hover {
