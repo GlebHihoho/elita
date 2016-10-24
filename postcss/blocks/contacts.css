@@ -1,5 +1,24 @@
 .contacts {
   @mixin container;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__container {
+  @media (min-width: 1200px) {
+    /*padding-top: 80px;
+    padding-left: 50px;*/
+  }
+}
+
+.contacts__block {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /* ---------- Шапка ---------- */
@@ -11,12 +30,21 @@
   font-size: 25px;
   line-height: 30px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    padding: 40px 0;
+  }
 }
 
 /* -------- Описание -------- */
 
 .contacts__description {
   padding-left: 20px;
+
+  @media (min-width: 768px) {
+    padding-left: 0;
+    text-align: center;;
+  }
 }
 
 .contacts__type {
@@ -25,11 +53,20 @@
   color: orange;
   font-weight: 700;
   text-decoration: underline;
+
+  @media (min-width: 768px) {
+    margin-left: 100px;
+    color: black;
+  }
 }
 
 .contacts__value {
   padding-bottom: 15px;
   margin-left: 20px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 30px;
+  }
 }
 
 /* -------- Время -------- */
@@ -37,8 +74,45 @@
 .contacts__time {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .contacts__number {
   margin-right: 70px;
+
+  @media (min-width: 768px) {
+    margin-right: 0;
+  }
+}
+
+/* -------- Карта -------- */
+
+.contacts__map-mobile {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.contacts__map-tablet {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    padding-top: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.contacts__map-decktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: block;
+  }
 }
