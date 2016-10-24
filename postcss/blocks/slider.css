@@ -1,0 +1,180 @@
+.slider {
+  @mixin container;
+}
+
+/* ----------------------------- */
+/* ----- Блок с картинкой ------ */
+/* ----------------------------- */
+
+.slider__slide {
+  width: 320px;
+  height: 480px;
+  display: flex;
+  align-items: flex-end;
+
+  background-repeat: no-repeat;
+  background-size: 320px 480px;
+
+  @media (min-width: 768px) {
+    width: 384px;
+    background-size: 384px 480px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 600px;
+    height: 600px;
+    background-size: 600px 600px;
+  }
+}
+
+.slider__content-block {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+/* ----- Первый слайд ------ */
+
+.slider__slide:nth-child(1) {
+  background-image: url("../img/1.jpg");
+}
+
+.slider__slide:nth-child(1) .slider__content {
+  width: 210px;
+  margin-left: 80px;
+  margin-bottom: 40px;
+
+  color: white;
+  background-color: rgba(202, 138, 198, 0.91);
+
+}
+
+/* ----- Второй слайд ------ */
+
+.slider__slide:nth-child(2) {
+  display: none;
+  background-image: url("../img/2.jpg");
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.slider__slide:nth-child(2) .slider__content {
+  margin-left: 20px;
+  margin-bottom: 50px;
+
+  background-color: rgba(216, 230, 213, 0.8);
+}
+
+.slider__slide:nth-child(2) .slider__border {
+  background-color: black;
+}
+
+/* ----- Третий слайд ------ */
+
+.slider__slide:nth-child(3) {
+  display: none;
+  background-image: url("../img/3.jpg");
+
+  @media (min-width: 1200px) {
+    /*display: flex;*/
+  }
+}
+
+.slider__slide:nth-child(3) .slider__content {
+  margin-left: 40px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.80);
+}
+
+.slider__slide:nth-child(3) .slider__text {
+  padding: 0 60px;
+}
+
+.slider__slide:nth-child(3) .slider__border {
+  background-color: black;
+}
+
+/* ------ Декоративные рамки ------- */
+
+.slider__border {
+  width: 50px;
+  height: 1px;
+
+  margin: 25px auto;
+
+  background-color: #fff;
+}
+
+/* ------ Блок с текстом ------- */
+
+.slider__content {
+  border: 2px solid grey;
+
+  text-align: center;
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.slider__text-small {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ---------- Текст ----------- */
+
+.slider__text {
+  @mixin margin-reset;
+  padding: 0 30px;
+}
+
+/* ----------------------------- */
+/* ----- Блок с управлением ---- */
+/* -------- слайдером ---------- */
+/* ----------------------------- */
+
+.slider__btn-block {
+  display: flex;
+  justify-content: center;
+
+  border: 2px solid grey;
+}
+
+/* ------- Радио инпут --------- */
+
+.slider__radio {
+  display: none;
+}
+
+/* --------- Кнопочки ---------- */
+
+.slider__btn {
+  display: block;
+  width: 30px;
+  height: 30px;
+
+  margin-right: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  border: 2px solid black;
+  border-radius: 50%
+}
+
+.slider__btn--last {
+  margin-right: 0;
+}
+
+.slider__btn--active {
+  border-color: orange;
+  background-color: orange;
+}
+
+.slider__js-none {
+  display: none;
+}
+
+.slider__js-flex {
+  display: flex;
+}

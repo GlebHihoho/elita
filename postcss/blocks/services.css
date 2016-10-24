@@ -1,0 +1,32 @@
+.services {
+  @mixin container;
+
+  background-color: #131006;
+  color: white;
+}
+
+/* ---------- Шапка ---------- */
+
+.services__header {
+  @mixin margin-reset;
+  padding: 20px 0;
+
+  color: orange;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+}
+
+/* --------- Список ---------- */
+
+.services__list {
+  @mixin margin-reset;
+  padding-left: 45px;
+  padding-bottom: 20px;
+}
+
+/* ----- Элементы списка ----- */
+
+.services__item {
+  padding-bottom: 3px;
+}

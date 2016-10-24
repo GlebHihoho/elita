@@ -1,0 +1,27 @@
+{
+  "name": "elite",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Сайт-визитка парикмахерской",
+  "author": "Gleb Motuz",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:GlebHihoho/elite.git"
+  },
+  "homepage": "https://github.com/GlebHihoho/elite",
+  "devDependencies": {
+    "autoprefixer": "6.4.1",
+    "browser-sync": "2.15.0",
+    "gulp": "3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "precss": "^1.4.0"
+  },
+  "scripts": {
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "6.5"
+  }
+}

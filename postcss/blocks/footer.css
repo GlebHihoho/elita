@@ -1,0 +1,28 @@
+.footer {
+  @mixin container;
+  border-top: 2px solid grey;
+}
+
+
+
+
+/* --------- Адрес --------- */
+
+.footer__adress {
+  text-align: center;
+}
+
+/* ---------- Тел ---------- */
+
+.footer__tel {
+  margin: 0 30px;
+
+  border-top: 2px solid orange;
+  text-align: center;
+}
+
+.footer__tel-number,
+.footer__adress-value {
+  @mixin margin-reset;
+  padding: 15px 0;
+}

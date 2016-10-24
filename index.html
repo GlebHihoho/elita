@@ -2,9 +2,163 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
   <title>Elite</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <header class="header">
+    <div class="header__logo-container">
+      <a class="header__logo" href="index.html">
+        <img class="header__logo-img" src="img/logo.svg" alt="logo" width="80" height="60">
+      </a>
+      <div class="header__name-site">
+        <p class="header__name  header__name-first">Парикмахерская</p>
+        <p class="header__name  header__name-second">«Элита»</p>
+      </div>
+    </div>
+
+    <div class="header__btn-container">
+      <a class="header__btn" href="#service">Услуги</a>
+      <a class="header__btn" href="#contact">Контакты</a>
+    </div>
+  </header>
+
+  <div class="slider">
+    <div class="slider__content-block">
+
+      <div class="slider__slide">
+        <div class="slider__content">
+          <div class="slider__border"></div>
+          <p class="slider__text">
+            <span class="slider__text-small">Многолетний</span><br> опыт, талант <span class="slider__text-small">в</span> индустрии волос!
+          </p>
+          <div class="slider__border"></div>
+        </div>
+      </div>
+
+      <div class="slider__slide">
+        <div class="slider__content">
+          <div class="slider__border"></div>
+          <p class="slider__text">
+            Мы всегда рады <br><span class="slider__text-small">предложить вам полный</span><br> спектр услуг <br>
+            <span class="slider__text-small">по уходу за волосами.</span>
+          </p>
+          <div class="slider__border"></div>
+        </div>
+      </div>
+
+      <div class="slider__slide">
+        <div class="slider__content">
+          <div class="slider__border"></div>
+          <p class="slider__text"><span class="slider__text-small">Выбери то,<br> что нужно<br></span> твоим<br> волосам</p>
+          <div class="slider__border"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="slider__btn-block">
+      <label class="slider__lebel">
+        <span class="slider__btn  "></span>
+        <input class="slider__radio  slider__radio-1" type="radio" name="toggle">
+      </label>
+
+      <label class="slider__lebel">
+        <span class="slider__btn"></span>
+        <input class="slider__radio  slider__radio-2" type="radio" name="toggle">
+      </label>
+
+      <label class="slider__lebel">
+        <span class="slider__btn  slider__btn--last"></span>
+        <input class="slider__radio  slider__radio-3" type="radio" name="toggle">
+      </label>
+    </div>
+  </div>
+
+  <div class="services">
+    <h2 class="services__header" id="service">Услуги</h2>
+    <ul class="services__list">
+      <li class="services__item">Стрижка мужская</li>
+      <li class="services__item">Стрижка усов</li>
+      <li class="services__item">Мелирование (мужское)</li>
+      <li class="services__item">Мужской маникюр</li>
+      <li class="services__item">Мужской педикюр</li>
+      <br>
+      <li class="services__item">Маникюр без покрытия лаком</li>
+      <li class="services__item">Маникюр с покрытием лаком</li>
+      <li class="services__item">Педикюр без покрытия лаком</li>
+      <li class="services__item">Педикюр с покрытием лаком</li>
+      <li class="services__item">Окрашивание бровей</li>
+      <li class="services__item">Окрашивание ресниц</li>
+      <li class="services__item">Коррекция бровей</li>
+      <br>
+      <li class="services__item">Стрижка женская</li>
+      <li class="services__item">Стрижка чёлки</li>
+      <li class="services__item">Подравнивание волос</li>
+      <li class="services__item">Мелирование</li>
+      <li class="services__item">Полировка волос</li>
+      <li class="services__item">Колорирование</li>
+      <li class="services__item">Химическая завивка</li>
+      <li class="services__item">Окрашивание волос</li>
+      <li class="services__item">Колорирование без обесцвечивания</li>
+      <li class="services__item">Плетение кос</li>
+      <li class="services__item">Укладка волос на бигуди</li>
+      <li class="services__item">Причёска</li>
+      <li class="services__item">Свадебная причёска</li>
+    </ul>
+    <a class="services__btn" href="#contact"></a>
+  </div>
+
+  <div class="contacts" id="contact">
+    <h2 class="contacts__header">Контакты</h2>
+
+    <div class="contacts__description">
+      <div class="contacts__block">
+        <div class="contacts__type">Адрес:</div>
+        <div class="contacts__value">
+          г. Жодино, ул. Гагарина, д. 32<br> (на территории гимназии №1)
+        </div>
+      </div>
+
+      <div class="contacts__block">
+        <div class="contacts__type">Время работы:</div>
+        <div class="contacts__value  contacts__time">
+          <div class="contacts__period">Пн. - Сб.</div>
+          <div class="contacts__number">10.00 - 19.00</div>
+        </div>
+        <div class="contacts__value  contacts__time">
+          <div class="contacts__period">Вс.</div>
+          <div class="contacts__number">10.00 - 16.00</div>
+        </div>
+      </div>
+
+      <div class="contacts__block">
+        <div class="contacts__type">Телефон:</div>
+        <div class="contacts__value">+375 (29) 643-46-91 (VEL)</div>
+      </div>
+    </div>
+
+    <div class="contacts__map-container">
+      <div class="contacts__map">
+        <script type="text/javascript" src="//maps-js.apissputnik.ru/v0.3/loader.js?1MyjI2dgq2g1"></script>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__contact-details">
+      <div class="footer__adress">
+        <p class="footer__adress-value">
+          г. Жодино, ул. Гагарина, д. 32<br> (на территории гимназии №1)
+        </p>
+      </div>
+
+      <div class="footer__tel">
+        <p class="footer__tel-number">+375 (29) 643-46-91 (VEL)</p>
+      </div>
+    </div>
+  </div>
+  <!-- <script src="js/slider.js"></script> -->
 </body>
 </html>
