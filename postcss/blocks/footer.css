@@ -1,10 +1,13 @@
 .footer {
   @mixin container;
   border-top: 2px solid grey;
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
-
-
-
 
 /* --------- Адрес --------- */
 
@@ -25,4 +28,14 @@
 .footer__adress-value {
   @mixin margin-reset;
   padding: 15px 0;
+}
+
+/* ---------- Logo ---------- */
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
 }

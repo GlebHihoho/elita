@@ -18,6 +18,11 @@
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 
@@ -32,7 +37,25 @@
   text-align: center;
 
   @media (min-width: 768px) {
-    padding: 40px 0;
+    padding: 0;
+    padding-bottom: 60px;
+
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+}
+
+.contacts__border {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 250px;
+    height: 1px;
+
+    margin: 50px auto;
+    background-color: black;
   }
 }
 
@@ -55,8 +78,14 @@
   text-decoration: underline;
 
   @media (min-width: 768px) {
-    margin-left: 100px;
+    margin-left: 140px;
     color: black;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 
@@ -65,7 +94,14 @@
   margin-left: 20px;
 
   @media (min-width: 768px) {
-    padding-bottom: 30px;
+    width: 300px;
+    margin-right: 70px;
+    text-align: left;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    margin-left: 20px;
   }
 }
 
@@ -84,7 +120,7 @@
   margin-right: 70px;
 
   @media (min-width: 768px) {
-    margin-right: 0;
+    /*margin-right: 0;*/
   }
 }
 
@@ -101,7 +137,6 @@
 
   @media (min-width: 768px) {
     display: block;
-    padding-top: 30px;
   }
 
   @media (min-width: 1200px) {
