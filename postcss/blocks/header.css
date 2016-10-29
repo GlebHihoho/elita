@@ -1,12 +1,14 @@
 .header {
   @mixin container;
   display: flex;
+  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
+
   font-size: 0;
   line-height: 0;
-
-  border-bottom: 2px solid black;
+  background-color: white;
+  border-bottom: 1px solid black;
 }
 
 /* -------------------------- */

@@ -4,6 +4,7 @@ $('.slider__content-block').slick({
   autoplay: true,
   autoplaySpeed: 3000,
   arrows: false,
+  dots: true,
   responsive: [
     {
       breakpoint: 768,

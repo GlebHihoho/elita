@@ -1,5 +1,6 @@
 .contacts {
   @mixin container;
+  background-color: white;
 
   @media (min-width: 1200px) {
     display: flex;
@@ -48,6 +49,7 @@
 
 .contacts__border {
   display: none;
+  background-color: white;
 
   @media (min-width: 768px) {
     display: block;
