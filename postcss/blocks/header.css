@@ -45,13 +45,12 @@
 .header__name-second {
   font-size: 20px;
   line-height: 25px;
-  /*text-transform: uppercase;*/
 }
 
 /* ---------- BTN ---------- */
 
 .header__btn {
-  padding: 27px 20px;
+  margin: 0 20px;
 
   color: black;
   font-size: 15px;
@@ -62,5 +61,5 @@
 }
 
 .header__btn:hover {
-  background-color: orange;
+  color: orange;
 }

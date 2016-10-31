@@ -1,44 +1,10 @@
 .slider {
   @mixin container;
-
-}
-
-/* ----------------------------- */
-/* ----- Блок с картинкой ------ */
-/* ----------------------------- */
-
-.slider__slide {
-  width: 320px;
-  height: 480px;
-  display: flex;
-  align-items: flex-end;
-
-  background-repeat: no-repeat;
-  background-size: 320px 480px;
-
-  @media (min-width: 768px) {
-    width: 384px;
-    background-size: 384px 480px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 600px;
-    height: 600px;
-    background-size: 600px 600px;
-  }
-}
-
-.slider__content-block {
-  @media (min-width: 768px) {
-    display: flex;
-  }
 }
 
 .slider__img {
   width: 320px;
   height: 480px;
-
-  margin: 0 auto;
 
   @media (min-width: 768px) {
     width: 384px;
@@ -46,7 +12,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 600px;
-    height: 780px;
+    width: 400px;
+    height: 600px;
   }
 }

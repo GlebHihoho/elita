@@ -8,13 +8,6 @@
   }
 }
 
-.contacts__container {
-  @media (min-width: 1200px) {
-    /*padding-top: 80px;
-    padding-left: 50px;*/
-  }
-}
-
 .contacts__block {
   @media (min-width: 768px) {
     display: flex;
@@ -120,13 +113,17 @@
 
 .contacts__number {
   margin-right: 70px;
-
-  @media (min-width: 768px) {
-    /*margin-right: 0;*/
-  }
 }
 
 /* -------- Карта -------- */
+
+.contacts__map-container {
+  border-top: 1px solid grey;
+
+  @media (min-width: 1200px) {
+    border-top: none;
+  }
+}
 
 .contacts__map-mobile {
   @media (min-width: 768px) {

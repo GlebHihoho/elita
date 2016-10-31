@@ -103,14 +103,12 @@ body {
 .header__name-second {
     font-size: 20px;
     line-height: 25px
-
-    /*text-transform: uppercase;*/
 }
 
 /* ---------- BTN ---------- */
 
 .header__btn {
-    padding: 27px 20px;
+    margin: 0 20px;
     color: black;
     font-size: 15px;
     font-weight: 700;
@@ -120,7 +118,7 @@ body {
 }
 
 .header__btn:hover {
-    background-color: orange
+    color: orange
 }
 .slider {
     width: 320px;
@@ -136,40 +134,9 @@ body {
         width: 1150px
     }
 }
-/* ----------------------------- */
-/* ----- Блок с картинкой ------ */
-/* ----------------------------- */
-.slider__slide {
-    width: 320px;
-    height: 480px;
-    display: flex;
-    align-items: flex-end;
-    background-repeat: no-repeat;
-    background-size: 320px 480px
-}
-@media (min-width: 768px) {
-    .slider__slide {
-        width: 384px;
-        background-size: 384px 480px
-    }
-}
-@media (min-width: 1200px) {
-    .slider__slide {
-        width: 600px;
-        height: 600px;
-        background-size: 600px 600px
-    }
-}
-.slider__content-block {}
-@media (min-width: 768px) {
-    .slider__content-block {
-        display: flex
-    }
-}
 .slider__img {
     width: 320px;
-    height: 480px;
-    margin: 0 auto
+    height: 480px
 }
 @media (min-width: 768px) {
     .slider__img {
@@ -179,8 +146,8 @@ body {
 }
 @media (min-width: 1200px) {
     .slider__img {
-        width: 600px;
-        height: 780px
+        width: 400px;
+        height: 600px
     }
 }
 .services {
@@ -209,7 +176,7 @@ body {
 .services__header {
     margin: 0;
     padding: 0;
-    padding: 20px 0;
+    padding: 40px 0 10px 0;
     font-size: 25px;
     line-height: 30px;
     text-align: center
@@ -425,14 +392,6 @@ body {
         justify-content: space-between
     }
 }
-.contacts__container {}
-@media (min-width: 1200px) {
-    .contacts__container {
-
-        /*padding-top: 80px;
-    padding-left: 50px;*/
-    }
-}
 .contacts__block {}
 @media (min-width: 768px) {
     .contacts__block {
@@ -536,13 +495,15 @@ body {
 .contacts__number {
     margin-right: 70px
 }
-@media (min-width: 768px) {
-    .contacts__number {
-
-        /*margin-right: 0;*/
+/* -------- Карта -------- */
+.contacts__map-container {
+    border-top: 1px solid grey
+}
+@media (min-width: 1200px) {
+    .contacts__map-container {
+        border-top: none
     }
 }
-/* -------- Карта -------- */
 .contacts__map-mobile {}
 @media (min-width: 768px) {
     .contacts__map-mobile {
